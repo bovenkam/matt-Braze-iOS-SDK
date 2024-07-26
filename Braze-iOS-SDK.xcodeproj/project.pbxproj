@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B53B3872C53618E006738BA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53B3862C53618E006738BA /* NotificationService.swift */; };
+		2B53B38B2C53618E006738BA /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2B53B3842C53618E006738BA /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B53B3932C536329006738BA /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 2B53B3922C536329006738BA /* OneSignalExtension */; };
+		2B53B3952C536329006738BA /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 2B53B3942C536329006738BA /* OneSignalFramework */; };
+		2B53B3972C536329006738BA /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 2B53B3962C536329006738BA /* OneSignalInAppMessages */; };
+		2B53B39D2C536ABE006738BA /* BrazeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2B53B39C2C536ABE006738BA /* BrazeKit */; };
+		2B8CA9BA2C53829200783472 /* AppDelegateUserNotificationExt.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8CA9B92C53829200783472 /* AppDelegateUserNotificationExt.swift .swift */; };
+		C436B20B2833F3F1004225D4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C436B20A2833F3F1004225D4 /* Utilities.swift */; };
+		FA63A5B624241E4F00BA856A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63A5B524241E4F00BA856A /* AppDelegate.swift */; };
+		FA63A5B824241E4F00BA856A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63A5B724241E4F00BA856A /* SceneDelegate.swift */; };
+		FA63A5BA24241E4F00BA856A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63A5B924241E4F00BA856A /* ViewController.swift */; };
+		FA63A5BD24241E4F00BA856A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA63A5BB24241E4F00BA856A /* Main.storyboard */; };
+		FA63A5BF24241E5000BA856A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA63A5BE24241E5000BA856A /* Assets.xcassets */; };
+		FA63A5C224241E5000BA856A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA63A5C024241E5000BA856A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B53B3892C53618E006738BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA63A5AA24241E4F00BA856A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B53B3832C53618E006738BA;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B53B38F2C53618E006738BA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2B53B38B2C53618E006738BA /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B53B37F2C5360F4006738BA /* Braze-iOS-SDK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Braze-iOS-SDK.entitlements"; sourceTree = "<group>"; };
+		2B53B3842C53618E006738BA /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B53B3862C53618E006738BA /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		2B53B3882C53618E006738BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B53B3902C53625F006738BA /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		2B8CA9B92C53829200783472 /* AppDelegateUserNotificationExt.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegateUserNotificationExt.swift .swift"; sourceTree = "<group>"; };
+		C436B20A2833F3F1004225D4 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		FA63A5B224241E4F00BA856A /* Braze-iOS-SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Braze-iOS-SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA63A5B524241E4F00BA856A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA63A5B724241E4F00BA856A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA63A5B924241E4F00BA856A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA63A5BC24241E4F00BA856A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA63A5BE24241E5000BA856A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA63A5C124241E5000BA856A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA63A5C324241E5000BA856A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B53B3812C53618E006738BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B53B3932C536329006738BA /* OneSignalExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA63A5AF24241E4F00BA856A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B53B3972C536329006738BA /* OneSignalInAppMessages in Frameworks */,
+				2B53B3952C536329006738BA /* OneSignalFramework in Frameworks */,
+				2B53B39D2C536ABE006738BA /* BrazeKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B53B3852C53618E006738BA /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				2B53B3902C53625F006738BA /* OneSignalNotificationServiceExtension.entitlements */,
+				2B53B3862C53618E006738BA /* NotificationService.swift */,
+				2B53B3882C53618E006738BA /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		FA63A5A924241E4F00BA856A = {
+			isa = PBXGroup;
+			children = (
+				FA63A5B424241E4F00BA856A /* Braze-iOS-SDK */,
+				2B53B3852C53618E006738BA /* OneSignalNotificationServiceExtension */,
+				FA63A5B324241E4F00BA856A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA63A5B324241E4F00BA856A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA63A5B224241E4F00BA856A /* Braze-iOS-SDK.app */,
+				2B53B3842C53618E006738BA /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA63A5B424241E4F00BA856A /* Braze-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				2B53B37F2C5360F4006738BA /* Braze-iOS-SDK.entitlements */,
+				C436B20A2833F3F1004225D4 /* Utilities.swift */,
+				FA63A5B524241E4F00BA856A /* AppDelegate.swift */,
+				2B8CA9B92C53829200783472 /* AppDelegateUserNotificationExt.swift .swift */,
+				FA63A5B724241E4F00BA856A /* SceneDelegate.swift */,
+				FA63A5B924241E4F00BA856A /* ViewController.swift */,
+				FA63A5BB24241E4F00BA856A /* Main.storyboard */,
+				FA63A5BE24241E5000BA856A /* Assets.xcassets */,
+				FA63A5C024241E5000BA856A /* LaunchScreen.storyboard */,
+				FA63A5C324241E5000BA856A /* Info.plist */,
+			);
+			path = "Braze-iOS-SDK";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B53B3832C53618E006738BA /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B53B38C2C53618E006738BA /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				2B53B3802C53618E006738BA /* Sources */,
+				2B53B3812C53618E006738BA /* Frameworks */,
+				2B53B3822C53618E006738BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+				2B53B3922C536329006738BA /* OneSignalExtension */,
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 2B53B3842C53618E006738BA /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FA63A5B124241E4F00BA856A /* Braze-iOS-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA63A5C624241E5000BA856A /* Build configuration list for PBXNativeTarget "Braze-iOS-SDK" */;
+			buildPhases = (
+				FA63A5AE24241E4F00BA856A /* Sources */,
+				FA63A5AF24241E4F00BA856A /* Frameworks */,
+				FA63A5B024241E4F00BA856A /* Resources */,
+				2B53B38F2C53618E006738BA /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B53B38A2C53618E006738BA /* PBXTargetDependency */,
+			);
+			name = "Braze-iOS-SDK";
+			packageProductDependencies = (
+				2B53B3942C536329006738BA /* OneSignalFramework */,
+				2B53B3962C536329006738BA /* OneSignalInAppMessages */,
+				2B53B39C2C536ABE006738BA /* BrazeKit */,
+			);
+			productName = "Braze-iOS-SDK";
+			productReference = FA63A5B224241E4F00BA856A /* Braze-iOS-SDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA63A5AA24241E4F00BA856A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "Ian Abels";
+				TargetAttributes = {
+					2B53B3832C53618E006738BA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					FA63A5B124241E4F00BA856A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FA63A5AD24241E4F00BA856A /* Build configuration list for PBXProject "Braze-iOS-SDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA63A5A924241E4F00BA856A;
+			packageReferences = (
+				2B53B3912C536329006738BA /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+				2B53B39B2C536ABE006738BA /* XCRemoteSwiftPackageReference "braze-swift-sdk" */,
+			);
+			productRefGroup = FA63A5B324241E4F00BA856A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA63A5B124241E4F00BA856A /* Braze-iOS-SDK */,
+				2B53B3832C53618E006738BA /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B53B3822C53618E006738BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA63A5B024241E4F00BA856A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA63A5C224241E5000BA856A /* LaunchScreen.storyboard in Resources */,
+				FA63A5BF24241E5000BA856A /* Assets.xcassets in Resources */,
+				FA63A5BD24241E4F00BA856A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B53B3802C53618E006738BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B53B3872C53618E006738BA /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA63A5AE24241E4F00BA856A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA63A5BA24241E4F00BA856A /* ViewController.swift in Sources */,
+				FA63A5B624241E4F00BA856A /* AppDelegate.swift in Sources */,
+				C436B20B2833F3F1004225D4 /* Utilities.swift in Sources */,
+				FA63A5B824241E4F00BA856A /* SceneDelegate.swift in Sources */,
+				2B8CA9BA2C53829200783472 /* AppDelegateUserNotificationExt.swift .swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B53B38A2C53618E006738BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B53B3832C53618E006738BA /* OneSignalNotificationServiceExtension */;
+			targetProxy = 2B53B3892C53618E006738BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA63A5BB24241E4F00BA856A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA63A5BC24241E4F00BA856A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA63A5C024241E5000BA856A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA63A5C124241E5000BA856A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B53B38D2C53618E006738BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9UBPB77MB;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Ian Abels. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Braze.Braze-iOS-SDK-mdsbsspm.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B53B38E2C53618E006738BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9UBPB77MB;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Ian Abels. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Braze.Braze-iOS-SDK-mdsbsspm.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA63A5C424241E5000BA856A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA63A5C524241E5000BA856A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA63A5C724241E5000BA856A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Braze-iOS-SDK/Braze-iOS-SDK.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9UBPB77MB;
+				INFOPLIST_FILE = "Braze-iOS-SDK/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Braze.Braze-iOS-SDK-mdsbsspm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FA63A5C824241E5000BA856A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Braze-iOS-SDK/Braze-iOS-SDK.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9UBPB77MB;
+				INFOPLIST_FILE = "Braze-iOS-SDK/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Braze.Braze-iOS-SDK-mdsbsspm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B53B38C2C53618E006738BA /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B53B38D2C53618E006738BA /* Debug */,
+				2B53B38E2C53618E006738BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA63A5AD24241E4F00BA856A /* Build configuration list for PBXProject "Braze-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA63A5C424241E5000BA856A /* Debug */,
+				FA63A5C524241E5000BA856A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA63A5C624241E5000BA856A /* Build configuration list for PBXNativeTarget "Braze-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA63A5C724241E5000BA856A /* Debug */,
+				FA63A5C824241E5000BA856A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B53B3912C536329006738BA /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
+		2B53B39B2C536ABE006738BA /* XCRemoteSwiftPackageReference "braze-swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/braze-inc/braze-swift-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B53B3922C536329006738BA /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B53B3912C536329006738BA /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
+		2B53B3942C536329006738BA /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B53B3912C536329006738BA /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
+		};
+		2B53B3962C536329006738BA /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B53B3912C536329006738BA /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalInAppMessages;
+		};
+		2B53B39C2C536ABE006738BA /* BrazeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B53B39B2C536ABE006738BA /* XCRemoteSwiftPackageReference "braze-swift-sdk" */;
+			productName = BrazeKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FA63A5AA24241E4F00BA856A /* Project object */;
+}
