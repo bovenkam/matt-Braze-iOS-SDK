@@ -58,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
              let braze = Braze(configuration: configuration)
              AppDelegate.braze = braze
              
-             return true
+             
      
         return true
     }
